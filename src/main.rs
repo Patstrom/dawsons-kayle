@@ -1,6 +1,6 @@
 use std::env;
 
-fn mex(s: Vec<u32>) -> u32 {
+fn mex(s: Vec<u16>) -> u16 {
     let mut i = 0;
     while s.contains(&i) {
         i += 1;
@@ -8,7 +8,7 @@ fn mex(s: Vec<u32>) -> u32 {
     i
 }
 
-fn g(n: usize, sgv: &Vec<u32>) -> u32  {
+fn g(n: usize, sgv: &Vec<u16>) -> u16  {
     match n {
         0|1 => 0,
         2|3 => 1,
